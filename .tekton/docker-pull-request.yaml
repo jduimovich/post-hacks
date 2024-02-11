@@ -1,8 +1,8 @@
 apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
-  name: $post-hacks-on-pull-request
-  namespace: $test-argocd
+  name: post-hacks-on-pull-request
+  namespace: test-argocd
   annotations:
     pipelinesascode.tekton.dev/on-event: "[pull_request]"
     pipelinesascode.tekton.dev/on-target-branch: "[main]"

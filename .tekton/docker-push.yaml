@@ -1,8 +1,8 @@
 apiVersion: tekton.dev/v1
 kind: PipelineRun
 metadata:
-  name: $post-hacks-on-push
-  namespace: $test-argocd
+  name: post-hacks-on-push
+  namespace: test-argocd
   annotations:
     pipelinesascode.tekton.dev/on-event: "[push]"
     pipelinesascode.tekton.dev/on-target-branch: "[main]"
