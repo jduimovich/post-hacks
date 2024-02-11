@@ -21,15 +21,15 @@ metadata:
 spec: 
   params:
   - name: dockerfile
-    value: $
+    value: 
   - name: git-url
     value: '{{repo_url}}'
   - name: image-expires-after
     value: 5d
   - name: output-image
-    value: $image-registry.openshift-image-registry.svc:5000/test-argocd/post-hacks:{{revision}}
+    value: image-registry.openshift-image-registry.svc:5000/test-argocd/post-hacks:{{revision}}
   - name: path-context
-    value: $.
+    value: .
   - name: revision
     value: '{{revision}}'
   pipelineRef:
